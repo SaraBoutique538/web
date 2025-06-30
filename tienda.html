@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Boutique</title>
+    <style>
+        body {
+            font-family: "Cambria italic", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffeef8;
+        }
+        header {
+            background-color: #f8b7cd;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            background-color: #f4a6c0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            padding: 1em;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #e18daf;
+        }
+                  footer {
+                blackground-color: var(--white);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    front-size: 0.9em;
+}
+        .content {
+            display: none;
+            padding: 2em;
+            background-color: #f8ebf1;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sara Boutique</h1>
+     <style>
+    .decoracion-esquina {
+      width: 100px; 
+      z-index: 1000; 
+    }
+  </style>
+  <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\B.jpg" alt="Decoración" class="decoracion-esquina">
+</header>
+
+
+<nav>
+    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('presentacion')">Presentación</a>
+    <a href="#" onclick="mostrarSeccion('femina')">Catálogo</a>
+    <a href="#" onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
+    <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+</nav>
+
+<section id="inicio" class="content">
+    <style>
+     position fixed;
+      width: 90px;
+      z-index: 1000; 
+
+  </style>
+  <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\descarga.png" alt="Decoración" class="decoracion-esquina">
+
+    <h2>Bienvenida a Sara Boutique, donde tu estilo cobra vida</h2> 
+    <p>En Sara Boutique, creemos que la moda es una forma de expresión única y poderosa. Por eso, cada prenda que seleccionamos está pensada para realzar tu personalidad, empoderarte y acompañarte en cada momento de tu día.</p>
+    <p>Descubre las últimas tendencias, básicos que nunca fallan y colecciones exclusivas diseñadas para mujeres auténticas, seguras y con estilo.</p>
+    <p>Ya sea que busques un look casual para el día a día o un outfit sofisticado para una ocasión especial, aquí encontrarás todo lo que necesitas para brillar con tu esencia.</p>
+    <p>Tu estilo empieza aquí. ¿Estás lista para inspirarte?</p>
+</section>
+
+<section id="presentacion" class="content active">
+    <h2>Presentación</h2>
+    <p>Somos Sara Boutique, una tienda de ropa hecha para quienes se expresan sin miedo. Nacimos en 2022 con una idea clara: crear moda cómoda, auténtica y con actitud. Cada prenda está pensada para adaptarse a tu estilo diario, con diseños frescos y materiales de calidad. Apostamos por producciones limitadas y locales, porque creemos en la moda con sentido. Más que ropa, somos una comunidad que vibra con la calle, el arte y la libertad de ser uno mismo.</p>
+    <p><strong>Horario de atención:</strong> Lunes a Sábado de 10:00 AM a 8:00 PM.</p>
+
+    <p><strong>¿Qué encontrarás en nuestra tienda?</strong></p>
+    
+    <p><strong>Servicios que ofrecemos:</strong></p>
+    <ul>
+        <li>Venta de ropa para todas las identidades.</li>
+        <li>Atención personalizada.</li>
+        <li>Promociones mensuales y descuentos por temporada.</li>
+        <li>Cambios y devoluciones fáciles dentro de los 15 días.</li>
+    </ul>
+</section>
+
+<section id="femina" class="content">
+    <p>Explora nuestra colección pensada para mujeres de todas las edades con actitud y estilo. Desde vestidos frescos y casuales hasta outfits más elegantes.</p>
+    <ul>
+        <style>
+            .contenedor {
+                display: flex;
+            }
+            .columna {
+                width:50%;
+                padding: 10px;
+                box-sizing:border-box;
+            }
+
+  
+        </style>
+        
+         <style>
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .galeria figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .galeria img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .precio-input {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="galeria">
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\0afdf46c-0697-4fb2-b0a2-e7e7e9120cf1.jpg" alt="Imagen 1">
+            <figcaption>Vestido Corto Negro de Satin</figcaption>
+            <input type="text" class="precio-input" placeholder="$300">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\Downloads\oufit3.jpg" alt="Imagen 2">
+            <figcaption>Conjunto de top y falda</figcaption>
+            <input type="text" class="precio-input" placeholder="$350">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\6b1ef841-1afb-4ae2-a629-71df4aabf673.jpg" alt="Imagen 3">
+            <figcaption>vestido azul casual</figcaption>
+            <input type="text" class="precio-input" placeholder="$280">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit7.jpg" alt="Imagen 4">
+            <figcaption>Vestido chic</figcaption>
+            <input type="text" class="precio-input" placeholder="$250">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit12.jpg" alt="Imagen 5">
+            <figcaption>Conjunto deportivo</figcaption>
+            <input type="text" class="precio-input" placeholder="$340">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\44a7bde8-9808-40b8-a747-49b4d4534a60.jpg" alt="Imagen 5">
+            <figcaption>Vestido corto Rosa</figcaption>
+            <input type="text" class="precio-input" placeholder="$300">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\7079a9a2-e0d4-4b9a-9593-fa7681cd1fac.jpg">
+            <figcaption>Vestido largo casual</figcaption>
+            <input type="text" class="precio-input" placeholder="$300">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\descarga (2).jpg">
+            <figcaption>Vestido corto verde</figcaption>
+            <input type="text" class="precio-input" placeholder="$200">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\descarga (3).jpg">
+            <figcaption>Vestido casual pierna abierta</figcaption>
+            <input type="text" class="precio-input" placeholder="$320">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\descarga (4).jpg">
+            <figcaption>Vestido floreado corto</figcaption>
+            <input type="text" class="precio-input" placeholder="$250">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit1.jpg">
+            <figcaption>Top y Falda</figcaption>
+            <input type="text" class="precio-input" placeholder="$350">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit2.jpg">
+            <figcaption>Blusa y Falda</figcaption>
+            <input type="text" class="precio-input" placeholder="$350">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit4.jpg">
+            <figcaption>Oufit completo</figcaption>
+            <input type="text" class="precio-input" placeholder="$350">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit5.jpg">
+            <figcaption>Crop top y pantalon</figcaption>
+            <input type="text" class="precio-input" placeholder="$420">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit6.jpg">
+            <figcaption>Conjunto elegante</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit9.jpg">
+            <figcaption>Conjunto completo con chaqueta</figcaption>
+            <input type="text" class="precio-input" placeholder="$450">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit10.jpg">
+            <figcaption>Conjunto elegante opcion 2</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit13.jpg">
+            <figcaption>Pantalon de meclilla y top rojo</figcaption>
+            <input type="text" class="precio-input" placeholder="$380">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit14.jpg">
+            <figcaption>Pantalon de meclilla o falda y Blusa</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit15.jpg">
+            <figcaption>Conjunto pantalon</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit20.jpg">
+            <figcaption>Vestido corto floreado</figcaption>
+            <input type="text" class="precio-input" placeholder="$300">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit21.jpg">
+            <figcaption>Blusa y falda pierna abierta</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit22.jpg">
+            <figcaption>Crop top negro y falda pierna abierta de mezclilla</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit24.jpg">
+            <figcaption>Blusa y mini falda</figcaption>
+            <input type="text" class="precio-input" placeholder="$350">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit25.jpg">
+            <figcaption>Vestido de mezclilla</figcaption>
+            <input type="text" class="precio-input" placeholder="$390">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit27.jpg">
+            <figcaption>Conjunto animal print</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit28.jpg">
+            <figcaption>Vestido elegante</figcaption>
+            <input type="text" class="precio-input" placeholder="$420">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit29.jpg">
+            <figcaption>Conjunto de crop top y mini falda</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit30.jpg">
+            <figcaption>Conjunto completo</figcaption>
+            <input type="text" class="precio-input" placeholder="$450">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit31.jpg">
+            <figcaption>Conjunto Chic</figcaption>
+            <input type="text" class="precio-input" placeholder="$400">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit32.jpg">
+            <figcaption>Vestido globo</figcaption>
+            <input type="text" class="precio-input" placeholder="$300">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit33.jpg">
+            <figcaption>Vestido corto juvenil</figcaption>
+            <input type="text" class="precio-input" placeholder="$320">
+        </figure>
+        <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\🖤⃝🦋.jpg">
+            <figcaption>Vestido corto Azul</figcaption>
+            <input type="text" class="precio-input" placeholder="$340">
+        </figure>
+         <figure>
+            <img src="C:\Users\monic\OneDrive\Desktop\Proyecto.tienda\oufit35.jpg">
+            <figcaption>Conjunto falta y top de cuadros</figcaption>
+            <input type="text" class="precio-input" placeholder="$310">
+        </figure>
+    </div>
+    </div>
+</section>
+
+
+<section id="faq" class="content">
+    <h2>Preguntas Frecuentes</h2>
+    <p><strong>¿Puedo cambiar mi prenda?</strong> Sí, aceptamos cambios dentro de los 15 días posteriores a la compra con ticket y producto sin uso.</p>
+    <p><strong>¿Tienen tienda en línea?</strong> Próximamente lanzaremos nuestra tienda en línea. ¡Mantente atento en nuestras redes sociales!</p>
+    <p><strong>¿Tienen tallas grandes?</strong> Sí, trabajamos para ofrecer una amplia gama de tallas para todas las personas.</p>
+</section>
+
+<section id="contacto" class="content">
+    <h2>Contacto</h2>
+    <p>Si tienes dudas o comentarios, no dudes en contactarnos:</p>
+    <ul>
+        <li><strong>Correo:</strong> saraboutique@gmail.com</li>
+        <li><strong>Teléfono:</strong> +52 4426402147</li>
+        <li><strong>Dirección:</strong> Av. Colón centro calle Guanajuato #23 .</li>
+        <li><strong>Instagram:</strong> Saraboutique777</li>
+    </ul>
+</section>
+
+<script>
+    function mostrarSeccion(id) {
+        const secciones = document.querySelectorAll('.content');
+        secciones.forEach(seccion => seccion.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+
+    // Mostrar Presentación al cargar
+    window.onload = () => mostrarSeccion('presentacion');
+</script>
+
+
+<footer>
+    <p>&copy; 2025 Sara Boutique. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html
